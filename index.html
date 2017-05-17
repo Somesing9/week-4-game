@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Crystal Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header text-center">
+            <h1>CrystalsCollector!</h1>
+            <div class="scoreboard">
+                Wins: <span id="wins"> 0</span> Losses: <span id="losses"> 0 </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="alert alert-info" role="alert">
+                    <p>You will be given a number at the start of the game.</p>
+                    <p>There are four crystals below. By click on a crystal you will add a specific number of points to you total score.</p>
+                    <p>You win the game by matching your score to the number, you lose the game if your score goes above the  number.</p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p>The values of the crystals will change each time the game restarts.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">The Number</h3>
+                            </div>
+                            <div class="panel-body">
+                                <span id="theNumber"></span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xs-6">
+                    	<div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Your Score</h3>
+                            </div>
+                            <div class="panel-body">
+                                <span id="currentScore">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="crystals">
+                	<div class="col-xs-3">
+                		<button id="btn1" class="crystal"></button>
+                	</div>
+                	<div class="col-xs-3">
+                		<button id="btn2" class="crystal"></button>
+                	</div>
+                	<div class="col-xs-3">
+                		<button id="btn3" class="crystal"></button>
+                	</div>
+                	<div class="col-xs-3">
+                        <button id="btn4" class="crystal"></button>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/bootstrap.min.js"></script>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
